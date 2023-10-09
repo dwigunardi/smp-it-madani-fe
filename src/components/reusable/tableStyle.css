@@ -1,0 +1,21 @@
+.ant-table
+  .ant-table-container
+  .ant-table-content
+  table
+  thead.ant-table-thead
+  .ant-table-cell {
+   color: #0F123F;
+   background-color: white;
+}
+.ant-table-wrapper .ant-table-footer {
+    background-color: rgb(46, 88, 148);
+}
+.ant-table-wrapper .ant-table-summary {
+    background-color: rgb(46, 88, 148);
+    color: white;
+    font-weight: 600;
+}
+
+.ant-table-wrapper tfoot>tr>td {
+    background-color: rgb(46, 88, 148);
+}

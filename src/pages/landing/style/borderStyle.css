@@ -1,0 +1,39 @@
+.border-style {
+  height: 285px;
+  width: 224px;
+  border: solid 4px;
+  border-radius: 25px !important;
+  opacity: 0.5;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(80deg, rgb(95, 174, 227) 0%, rgb(172, 213, 241) 100%);
+}
+
+.bodyHeight {
+  height: 285px;
+  width: 100%;
+  
+}
+.gradient-border-mask {
+  position: relative;
+  padding: 15px 20px;
+}
+
+.gradient-border-mask::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10%; 
+  border: 5px solid transparent;
+  background: linear-gradient(179.37deg, #5FAEE3 0.53%, #ACD5F1 99.45%) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, 
+  linear-gradient(#fff 0 0);;
+  -webkit-mask-composite: destination-out;
+  mask-composite: destination-out;
+  mask-composite: exclude;
+}
